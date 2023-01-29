@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    {%if marks >70%}
+    <h1>You are pass, Marks are {{marks}}</h1>
+    {%else%}
+    <h1>You are fail, Marks are {{marks}}</h1>
+    {%endif%}
+<h6>Marks are</h6>
+{% for key,value in result.items() %}
+<tr>
+    <th>{{key}}</th>
+    <td<>{{value}}</td>
+    {%endfor%}
+</tr>
+</body>
+</html>
+
+<!-- <!doctype html>
+<html>
+   <body>
+      {% if marks>50 %}
+         <h1> Your result is pass!</h1>
+      {% else %}
+         <h1>Your result is fail</h1>
+      {% endif %}
+   </body>
+</html> -->
