@@ -12,7 +12,7 @@
     {%else%}
     <h1>You are fail, Marks are {{marks}}</h1>
     {%endif%}
-<h6>Marks are</h6>
+<h3>Marks are</h3>
 {% for key,value in result.items() %}
 <tr>
     <th>{{key}}</th>
@@ -21,14 +21,3 @@
 </tr>
 </body>
 </html>
-
-<!-- <!doctype html>
-<html>
-   <body>
-      {% if marks>50 %}
-         <h1> Your result is pass!</h1>
-      {% else %}
-         <h1>Your result is fail</h1>
-      {% endif %}
-   </body>
-</html> -->
